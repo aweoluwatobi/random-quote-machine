@@ -1,6 +1,6 @@
 #random-quote {
     height: 200px;
-    border: 1px solid gray;
+    border: transparent;
     margin: 200px auto 10px;
     padding: 20px;
 }

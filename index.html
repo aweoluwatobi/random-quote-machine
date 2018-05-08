@@ -12,9 +12,7 @@
     <body>
         <div class="container">
             <div class="row text-center">
-                <div class="offset-sm-3 col-sm-6 card" id="random-quote">
-                   The quote will go in here
-                </div>
+                <div class="offset-sm-3 col-sm-6 card" id="random-quote"></div>
             </div>
             <div class="row text-center">
                 <blockquote class="col-sm-12 blockquote">
@@ -23,27 +21,8 @@
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        <script>
-            function randomQuote() {
-                $.ajax({
-                    url:"http://api.forismatic.com/api/1.0/?",
-                    dataType: "jsonp",
-                    data:"method=getQuote&format=jsonp&lang=en&jsonp=?",
-                    success: function( response ) {
-                        $("#random-quote").html("<p id='random_quote'>" +
-                        response.quoteText + "<br/>&dash; " + response.quoteAuthor + "</p>");
-                    }
-                });
-            }
-            $(document).ready(function() {
-                $("#get-quote").on("click", function() {
-                    randomQuote();
-                });
-            });
-            
-               
-            </script>
-        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>   
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script!-->
+        <script src="scripts/main.js"></script>
     </body>
 </html>
