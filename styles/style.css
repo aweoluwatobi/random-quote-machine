@@ -1,6 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Sail');
+@import url('https://fonts.googleapis.com/css?family=Qwigley');
+body {
+    background-color: black;
+}
+p {
+    font-family: 'Sail', cursive;
+    font-size: 2em;
+    color: #fff;
+}
 #random-quote {
-    height: 200px;
-    border: transparent;
-    margin: 200px auto 10px;
     padding: 20px;
+}
+
+.author {
+    font-family: 'Qwigley', cursive;
+    font-size: 2rem;
+    color: #bbcbd9;
+    letter-spacing: 0.02em;
+}
+.absolute {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.relative {
+    position:relative; 
+    width:600px; 
+    margin:auto;
 }
