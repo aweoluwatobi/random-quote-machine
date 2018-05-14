@@ -29,3 +29,13 @@ p {
     width:600px; 
     margin:auto;
 }
+.fab {
+    color: #fff !important;
+    display: inline-block;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.icon {
+    text-align: right !important;
+}
