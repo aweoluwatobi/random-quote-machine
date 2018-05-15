@@ -36,6 +36,15 @@ p {
     margin: 0 auto;
 }
 
-.icon {
-    text-align: right !important;
+.quote-btn {
+    background-color: #333;
+    border-color: transparent;
+}
+
+.tweet {
+    background-color: #333;
+    border-color: transparent !important;
+}
+.tweet:hover {
+    background-color: #1da1f2 !important;
 }
