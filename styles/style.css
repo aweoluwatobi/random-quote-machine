@@ -36,15 +36,11 @@ p {
     margin: 0 auto;
 }
 
-.quote-btn {
-    background-color: #333;
-    border-color: transparent;
-}
-
-.tweet-btn {
+.quote-btn, .tweet-btn {
     background-color: #333;
     border-color: transparent !important;
 }
-.tweet:hover {
+
+.tweet-btn:hover {
     background-color: #1da1f2 !important;
 }
