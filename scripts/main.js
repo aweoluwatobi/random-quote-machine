@@ -4,26 +4,26 @@ function randomQuote() {
         dataType: "jsonp",
         data:"method=getQuote&format=jsonp&lang=en&jsonp=?",
         success: function( response ) {
-            $("#random-quote").html('<p class="mb-0" id="random_quote">&quot;' +
-            response.quoteText + '&quot;</p> <footer class="blockquote-footer author"> '+response.quoteAuthor + '</footer>')
+            $("#random-quote").html('<p id="random_quote">&quot;' +
+            response.quoteText +'&quot;</p> <footer class="blockquote-footer author">- '+ response.quoteAuthor + '</footer>')
         }
     });
 }
 
-function tweet(message) {
-    window.open('https://twitter.com/intent/tweet?hastags=freecodecamp&text=' + encodeURIComponent(message));   
+function tweetBtn(message) {
+    window.open('https://twitter.com/intent/tweet?hashtags=InspirationalQuotes,randomQuoteMachine&text=' + encodeURIComponent(message));   
 }
 
-var msg = $("#random-quote");
+const quote = $("#random-quote");
 function tweetHandler() {
-    tweet($(msg).text());
+    tweetBtn((quote).text());
 }
 
 $(document).ready(function() {
     randomQuote();
-    $("#get-quote").on("click", function() {
+    $("#get-quote").click(function() {
         randomQuote();
     });
-    $('#send-tweet').on('click', tweetHandler);
+    $('#send-tweet').click(tweetHandler);
 });
 
