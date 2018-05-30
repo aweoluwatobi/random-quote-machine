@@ -1,17 +1,18 @@
 function randomQuote() {
     $.ajax({
-        url:"http://api.forismatic.com/api/1.0/?",
+        url:"https://api.forismatic.com/api/1.0/?",
         dataType: "jsonp",
         data:"method=getQuote&format=jsonp&lang=en&jsonp=?",
         success: function( response ) {
-            $("#random-quote").html('<p id="random_quote">&quot;' +
-            response.quoteText +'&quot;</p> <footer class="blockquote-footer author">- '+ response.quoteAuthor + '</footer>')
+            $("#random-quote").html('<p id="random_quote">&quot;'+ 
+            response.quoteText+'&quot;</p> <footer class="blockquote-footer">'+ response.quoteAuthor + '</footer>')
         }
     });
 }
 
 function tweetBtn(message) {
-    window.open('https://twitter.com/intent/tweet?hashtags=InspirationalQuotes,randomQuoteMachine&text=' + encodeURIComponent(message));   
+    window.open('https://twitter.com/intent/tweet?hashtags=InspirationalQuotes,randomQuoteMachine&url=https://codepen.io/awetob/full/OZedZa&text=' + 
+    encodeURIComponent(message));   
 }
 
 const quote = $("#random-quote");
@@ -26,4 +27,5 @@ $(document).ready(function() {
     });
     $('#send-tweet').click(tweetHandler);
 });
+
 
