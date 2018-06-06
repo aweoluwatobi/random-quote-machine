@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Sail');
 @import url('https://fonts.googleapis.com/css?family=Qwigley');
+
 body {
     background-color: black;
+    height: 100%;
 }
 p {
     font-family: 'Sail', cursive;
@@ -18,16 +20,14 @@ p {
     color: #bbcbd9;
     letter-spacing: 0.02em;
 }
-.absolute {
+.relative {
     position: absolute;
     top: 30%;
-    width: 100%;
 }
 
-.relative {
-    position:relative; 
-    width:600px; 
-    margin:auto;
+.absolute {
+    width: 50%;
+    margin: auto;
 }
 .fab {
     color: #fff !important;
