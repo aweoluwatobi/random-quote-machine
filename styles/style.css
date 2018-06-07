@@ -20,15 +20,16 @@ p {
     color: #bbcbd9;
     letter-spacing: 0.02em;
 }
-.relative {
+.quote-wrapper {
     position: absolute;
     top: 30%;
 }
 
-.absolute {
+.quote-content {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
 }
+
 .fab {
     color: #fff !important;
     display: inline-block;
